@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+
+:root{
+    --black:wheat;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: black;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 5rem;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:rgb(15 70 100);
+    text-transform: none;
+    font-family: cursive;
+    border:solid #4A7D95 1px;
+    border-radius: 50%
+}
+
+.heading span::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    margin-left: -56px;
+    font-family: cursive;
+    border-bottom: 2px solid #0f4664;
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background-blend-mode: darken;
+    background: #4A7D95;
+    border-bottom: whitesmoke solid 0.5px;
+}
+
+
+.header .logo p {
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+.header .logo p span{
+    color: #f7931e;
+    font-size: 4rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+.header .navbar a:hover{
+    color:wheat;
+    border-bottom: .1rem solid wheat;
+    padding-bottom: .5rem;
+    transition: 0.3s linear;
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:#f7931e;
+}
+
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top:115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: black;
+    padding:1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: black;
+}
+
+.header .search-form label:hover{
+    color:var(--main-color);
+}
+.home{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3) url(pic/img\ 1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-blend-mode: darken;
+}
+.home p {
+    text-align: center;
+    position: relative;
+    top: 25rem;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: monospace;
+    background: rgba(0,0,0,0.3);
+    padding: 4rem;
+}
+.home h3{
+    text-align: left;
+    position: absolute;
+    bottom: 60px;
+    width: 32%;
+    color: wheat;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.home p span {
+    font-family: monospace;
+    font-size: 25px;
+    color: #f7931e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Team .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.Team .box-container .box{
+    border: 1px solid #0f4664;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+}
+
+.Team .box-container .box p{
+    font-size: 1.9rem;
+    line-height: 1.8;
+    color: rgb(15 70 100);
+    padding: 2rem 0;
+}
+
+.Team .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Team .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    font-family: monospace;
+}
+
+.Team .box-container .box h3 span{
+    color: green;
+    font-size: 15px;
+}
+
+.Team .box-container .box .stars i{
+    font-size: 1.5rem;
+    color:whitesmoke;
+}
+
+.Team .voice p{
+    font-size: 2rem;
+    line-height: 1.8;
+    color: rgb(15 70 100);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.Team .voice p span {
+    font-weight: bold;
+    color: #0e212a;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
+
+.contact .row{
+    display: flex;
+    background:whitesmoke;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: white;
+}
+
+.contact .row form .inputBox span{
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.News .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    padding-top: 3.5rem;
+}
+
+
+.News .moreText {
+    display: none;
+}
+
+
+.News .read-more-btn {
+    display: inline-block;
+    background: transparent;
+    color: #007bff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.News .text.show-more .moreText {
+    display: inline;
+    text-transform: none;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ebebf1 !important;
+    padding: 1rem 0px;
+    font-weight: normal;
+}
+
+.News .box-container .box{
+    border:wheat;    
+}
+
+.News .box-container .box .image{
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.News .box-container .box .image img{
+    object-fit: contain;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.News .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.News .box-container .box .content{
+    padding:2rem;
+}
+
+.News .box-container .box .content .report {
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.News .box-container .box .content .report .point {
+    padding-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: green;
+    align-items: center;
+}
+
+
+.News .box-container .box .content h2 a{
+    color: #0e212a;
+    font-size: 25px;
+}
+
+.News .box-container .box .content h2 a:hover{
+    color: #007bff;
+}
+
+.News .box-container .box .content p a{
+    color: #007bff;
+}
+
+.News .box-container .content .report span {
+    color: #007bff;
+}
+
+
+
+
+.News .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:white;
+}
+
+
+
+.News .box-container .box .content p{
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color:rgb(15 70 100);
+    padding:1rem 0;
+}
+
+
+
+
+
+
+.adventure .box-container .box .image img {
+    object-fit: contain;
+    width: 100%;
+    transition: .3s linear;
+}
+.adventure .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+.adventure .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.adventure .box-container .box .content {
+    padding: 2rem;
+}
+.adventure .box-container .box .content h2 a {
+    color: #0e212a;
+    font-size: 20px;
+}
+.adventure .box-container .box .content .report {
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.adventure .box-container .box .content .report .point {
+    padding-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: green;
+    align-items: center;
+}
+.adventure .box-container .content .report span {
+    color: #007bff;
+}
+.adventure .box-container .box .content p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: rgb(15 70 100);
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: #0e212a;
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:wheat;
+    border: 1px solid white;
+    margin:.3rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer .share a:hover{
+    border-color: #eb2f06;
+}
+
+
+
+.footer .credit{
+    font-size: 16px;
+    color:whitesmoke;
+    font-weight: lighter;
+    padding:1.5rem;
+    border-top: 1px solid white;
+}
+
+.footer .credit a {
+    color: #f7931e;
+    font-size: 15px;
+}
+
+.footer .credit span{
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: rgb(0,0,0,0.8);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color: whitesmoke;
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
