@@ -201,22 +201,6 @@ header.sticky{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .Team .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -279,13 +263,6 @@ header.sticky{
 
 
 
-
-
-
-
-
-
-
 .contact .row{
     display: flex;
     background:whitesmoke;
@@ -333,11 +310,6 @@ header.sticky{
     text-transform: none;
     background:none;
 }
-
-
-
-
-
 
 
 
@@ -509,12 +481,6 @@ header.sticky{
 
 
 
-
-
-
-
-
-
 .footer{
     background: #0e212a;
     text-align: center;
@@ -558,10 +524,6 @@ header.sticky{
 .footer .credit span{
     color:white;
 }
-
-
-
-
 
 
 
